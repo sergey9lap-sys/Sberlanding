@@ -355,6 +355,10 @@ h1 {
   margin: 0 auto;
 }
 
+.mobile-altitude {
+  display: none;
+}
+
 .roadmap::before {
   content: "";
   position: absolute;
@@ -740,7 +744,7 @@ h1 {
   .hero-bg {
     opacity: 1;
     object-position: 64% center;
-    filter: brightness(1.12) contrast(1.08);
+    filter: brightness(1.35) contrast(1.14);
   }
 
   .hero::before {
@@ -752,9 +756,9 @@ h1 {
     padding: 1.35rem;
     border-radius: 0.65rem;
     background:
-      linear-gradient(90deg, rgba(5, 6, 7, 0.9) 0%, rgba(8, 10, 11, 0.7) 58%, rgba(8, 10, 11, 0.38) 100%),
-      rgba(5, 6, 7, 0.24);
-    backdrop-filter: blur(3px);
+      linear-gradient(90deg, rgba(5, 6, 7, 0.78) 0%, rgba(8, 10, 11, 0.54) 58%, rgba(8, 10, 11, 0.18) 100%),
+      rgba(5, 6, 7, 0.12);
+    backdrop-filter: blur(1.5px);
   }
 
   .hero-logo {
@@ -764,8 +768,8 @@ h1 {
 
   .hero-shade {
     background:
-      linear-gradient(180deg, rgba(5, 6, 7, 0.62), rgba(5, 6, 7, 0.38) 46%, rgba(5, 6, 7, 0.82)),
-      linear-gradient(90deg, rgba(5, 6, 7, 0.78), rgba(5, 6, 7, 0.12));
+      linear-gradient(180deg, rgba(5, 6, 7, 0.44), rgba(5, 6, 7, 0.22) 46%, rgba(5, 6, 7, 0.72)),
+      linear-gradient(90deg, rgba(5, 6, 7, 0.62), rgba(5, 6, 7, 0));
   }
 
   h1 {
@@ -851,20 +855,52 @@ h1 {
     margin-bottom: 1.35rem;
   }
 
-  .roadmap::before {
-    display: block;
-    left: 1.42rem;
-    top: 2.35rem;
-    bottom: 2.35rem;
+  .mobile-altitude {
+    position: absolute;
+    z-index: 1;
+    left: 0.9rem;
+    top: 14.5rem;
+    bottom: 3.2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 2.1rem;
+    padding: 0.3rem 0;
+    color: rgba(245, 247, 246, 0.58);
+    font-size: 0.58rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .mobile-altitude::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 50%;
     width: 2px;
-    height: auto;
-    background: linear-gradient(180deg, rgba(100, 211, 122, 0.85), rgba(245, 247, 246, 0.35), rgba(100, 211, 122, 0.85));
-    opacity: 0.68;
-    box-shadow: 0 0 1rem rgba(100, 211, 122, 0.18);
+    transform: translateX(-50%);
+    background:
+      linear-gradient(180deg, rgba(245, 247, 246, 0.18), rgba(100, 211, 122, 0.82), rgba(245, 247, 246, 0.16));
+    box-shadow: 0 0 1rem rgba(100, 211, 122, 0.22);
+  }
+
+  .mobile-altitude span {
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem 0.22rem;
+    border-radius: 999px;
+    background: rgba(5, 6, 7, 0.68);
+  }
+
+  .roadmap::before {
+    display: none;
   }
 
   .roadmap-item {
-    padding: 1rem 1rem 1rem 3.65rem;
+    margin-left: 2.45rem;
+    padding: 1rem 1rem 1rem 3.2rem;
     border-radius: 0.55rem;
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 38%),
@@ -872,7 +908,7 @@ h1 {
   }
 
   .roadmap-item::before {
-    left: 0.88rem;
+    left: 0.78rem;
     top: 1rem;
     width: 1.25rem;
     height: 1.25rem;
