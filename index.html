@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Эфир Сбера: как превратить опыт в капитал через преподавание, экспертный бренд и advisory-роли."
+    />
+    <title>Сбер | Как превратить опыт в капитал</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero screen" id="hero">
+        <img class="hero-bg" src="public/assets/mountain-hero.png" alt="" aria-hidden="true" />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <img class="hero-logo" src="public/assets/sber-logo-silver.png" alt="Сбер" />
+            <p class="eyebrow">Закрытый эфир для предпринимателей и руководителей</p>
+            <h1>Как превратить опыт в капитал</h1>
+            <p class="lead">
+              Путь в преподавание, упаковка экспертного бренда и роли советника,
+              члена advisory board, ментора, лектора и автора.
+            </p>
+
+            <div class="event-meta" aria-label="Дата и время эфира">
+              <div>
+                <span>Дата</span>
+                <strong>26 мая</strong>
+              </div>
+              <div>
+                <span>Время</span>
+                <strong>18:00 мск</strong>
+              </div>
+            </div>
+
+            <button class="primary-cta" type="button" data-open-register>
+              Принять участие
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <aside class="program-panel" id="program" aria-labelledby="program-title">
+            <p class="panel-label">На встрече обсудим</p>
+            <h2 id="program-title">Капитализация опыта без потери репутации</h2>
+            <ul>
+              <li>Почему практики боятся идти в преподавание и как сохранить доверие.</li>
+              <li>Чем экспертный бренд отличается от самопиара, который разрушает капитал.</li>
+              <li>Что стоит за ролями советника, advisory board, ментора и лектора.</li>
+              <li>Почему преподавание может стать быстрым маршрутом масштабирования компании.</li>
+              <li>С каких первых шагов начать, если есть кейсы, но нет публичного имени.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="expert screen" id="expert">
+        <div class="expert-media">
+          <img src="public/assets/alexandra-goreva.jpg" alt="Александра Горева-Куртышева" />
+        </div>
+        <div class="expert-copy">
+          <p class="eyebrow">Эксперт встречи</p>
+          <h2>Александра Горева-Куртышева</h2>
+          <div class="expert-facts" aria-label="Опыт эксперта">
+            <span>Собственник BMCG</span>
+            <span>Генеральный продюсер и архитектор акселератора Сбера «Бизнес 360» на 40 000 участников</span>
+            <span>Автор стратегических программ для Х5, ВТБ, Роснефти и Норникеля</span>
+            <span>Колумнист Forbes Russia и РБК</span>
+            <span>Резидент Клуба Первых, выпускница Сколково</span>
+          </div>
+          <button class="primary-cta secondary" type="button" data-open-register>
+            Зарегистрироваться
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="register-dialog" id="registerDialog" aria-labelledby="registerTitle">
+      <form class="register-form" method="dialog" id="registerForm">
+        <button class="close-button" type="button" data-close-register aria-label="Закрыть">×</button>
+        <p class="panel-label">Регистрация на эфир</p>
+        <h2 id="registerTitle">Оставьте контакты</h2>
+        <label>
+          Имя
+          <input name="name" type="text" autocomplete="name" required />
+        </label>
+        <label>
+          Телефон или email
+          <input name="contact" type="text" autocomplete="email" required />
+        </label>
+        <button class="primary-cta form-submit" type="submit">Принять участие</button>
+        <p class="form-note">
+          После подключения формы сюда можно подставить реальный обработчик заявки.
+        </p>
+      </form>
+    </dialog>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
