@@ -162,23 +162,17 @@
     </footer>
 
     <dialog class="register-dialog" id="registerDialog" aria-labelledby="registerTitle">
-      <form class="register-form" method="dialog" id="registerForm">
+      <div class="register-form">
         <button class="close-button" type="button" data-close-register aria-label="Закрыть">×</button>
         <p class="panel-label">Регистрация на эфир</p>
-        <h2 id="registerTitle">Оставьте контакты</h2>
-        <label>
-          Имя
-          <input name="name" type="text" autocomplete="name" required />
-        </label>
-        <label>
-          Телефон или email
-          <input name="contact" type="text" autocomplete="email" required />
-        </label>
-        <button class="primary-cta form-submit" type="submit">Принять участие</button>
-        <p class="form-note">
-          После подключения формы сюда можно подставить реальный обработчик заявки.
-        </p>
-      </form>
+        <h2 id="registerTitle">Принять участие</h2>
+        <div class="gc-widget">
+          <script
+            id="df975dab6516b55e74566df4f30fbf75fa678fa4"
+            src="https://agkedu.getcourse.ru/pl/lite/widget/script?id=1606454"
+          ></script>
+        </div>
+      </div>
     </dialog>
 
     <script src="./main.js"></script>

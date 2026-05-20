@@ -641,6 +641,15 @@ h1 {
   border-color: rgba(100, 211, 122, 0.75);
 }
 
+.gc-widget {
+  min-height: 16rem;
+}
+
+.gc-widget iframe,
+.gc-widget form {
+  max-width: 100%;
+}
+
 .form-submit {
   width: 100%;
   margin-top: 0.4rem;
