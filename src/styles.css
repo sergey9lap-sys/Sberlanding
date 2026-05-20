@@ -594,7 +594,7 @@ h1 {
 }
 
 .register-dialog {
-  width: min(92vw, 30rem);
+  width: min(94vw, 38rem);
   border: 1px solid var(--line);
   border-radius: 0.5rem;
   padding: 0;
@@ -612,7 +612,7 @@ h1 {
   position: relative;
   display: grid;
   gap: 1rem;
-  padding: 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
 }
 
 .register-form h2 {
@@ -643,11 +643,20 @@ h1 {
 
 .gc-widget {
   min-height: 16rem;
+  width: min(100%, 34rem);
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .gc-widget iframe,
-.gc-widget form {
+.gc-widget form,
+.gc-widget img {
   max-width: 100%;
+}
+
+.gc-widget img {
+  height: auto;
+  object-fit: contain;
 }
 
 .form-submit {
